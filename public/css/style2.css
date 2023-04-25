@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.container
+{
+    width: 100%;
+	/* margin-top: 200px; */
+	
+}
+
+.contact{
+	
+	
+	background-image: url('../img/Registertion_Page.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font: arial;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+.part-1{
+	padding: 4%;
+	background-color: white;
+	box-shadow: 6px 6px 30px rgba(0,0,0,0.5);
+	border-radius: 20px;
+}
+
+.form-control{
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.btn-primary,.btn-primary:hover{
+	background-color: #F9A826;
+	border-color: #F9A826;
+	width: 30%;
+	border-radius: 20px;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
+	background-color: #F9A826;
+	border-color: #F9A826;
+}
+
+.btn-primary.focus, .btn-primary:focus{
+	background-color: #F9A826;
+	border-color: #F9A826;
+}
+
+
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	margin-bottom: 1%;
+	border-radius: 15px;
+}
+
+.hhh{
+	text-align: center;
+	font-family: 'Sofia';
+	font-size: 50px;
+	color: #FF8B14;
+}
+
+.part-2{
+	margin-top: 10%;
+}

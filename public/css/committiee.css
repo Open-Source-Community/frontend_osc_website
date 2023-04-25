@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1366px) {
+  main .hero .committee-illustration {
+    height: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 1126px) {
+  main .hero .committee-illustration {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main .hero .writables {
+    margin-top: 2rem !important;
+  }
+  main .hero .writables .committee-desciption {
+    margin: 1rem;
+  }
+  main .hero .committee-illustration {
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  main .hero .committee-illustration {
+    height: 150px !important;
+  }
+}

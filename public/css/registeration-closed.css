@@ -1,0 +1,19 @@
+main .container:first-child {
+  padding: 2rem;
+}
+
+main .container:first-child h1 {
+  color: #585858;
+}
+
+main .container:first-child p {
+  color: #FF8B14;
+}
+
+main .container:first-child .btn {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: 1rem;
+}

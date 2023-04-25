@@ -1,0 +1,10 @@
+@media only screen and (max-width: 960px) {
+  main .container:first-child #registeration-p {
+    margin-top: 1rem; } }
+@media only screen and (max-width: 546px) {
+  main .container:first-child {
+    padding: 0.5rem !important; }
+    main .container:first-child h1 {
+      font-size: 25px; } }
+
+/*# sourceMappingURL=registeration-closed.css.map */

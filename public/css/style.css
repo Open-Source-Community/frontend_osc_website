@@ -1,0 +1,51 @@
+*{
+	box-sizing: border-box;
+}
+.topTopic{
+    margin-top: 200px;
+}
+.monospace {
+  text-indent: 40px;
+  color: #525252;
+  font-size: 65px;
+  font-weight: bold;
+}
+.topTopic p {
+  	margin-left: 40px;
+  	font-size: 35px;
+}
+p.description {
+	margin-top: 80px;
+    color: #f9a826;
+    margin-bottom: 60px;
+}
+p.linkage {
+  	color: #525252;
+     font-weight: bold;
+     margin-left: 0px;
+}
+.c_logo { 
+    float: right;  
+    margin: 10px;
+    margin-right: 200px; 
+    width: 450px;
+    height: 350px;
+} 
+.behance {
+    align-items:center;
+    position: relative;
+    vertical-align: middle;
+}
+.monospace {
+  font-family: "Verdana", sans-serif;
+}
+span {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+

@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1920px) {
+  body main .hero div {
+    grid-row-gap: 20px; }
+  body main .hero .hero-img {
+    width: 650px;
+    height: auto; } }
+@media only screen and (max-width: 1366px) {
+  body main .hero .hero-img {
+    width: 500px;
+    height: auto; } }
+@media only screen and (max-width: 960px) {
+  body main .committiees p br {
+    display: none; } }
+@media only screen and (max-width: 750px) {
+  .committiees .committees-container ol .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px; } }
+@media only screen and (max-width: 546px) {
+  main .hero .hero-img {
+    width: 350px !important; }
+  main .committiees .committees-container button {
+    display: none; } }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,159 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  main .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  main .hero div {
+    display: -ms-grid;
+    display: grid;
+  }
+  
+  main .hero img {
+    -webkit-animation: float 4s ease-in-out infinite;
+            animation: float 4s ease-in-out infinite;
+  }
+  
+  main .committiees {
+    position: relative;
+  }
+  
+  main .committiees .flickity-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border: none;
+    background-color: #FF8B14;
+    border-radius: 250px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 99998;
+    -webkit-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  main .committiees .flickity-button svg {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  
+  main .committiees .flickity-button:hover {
+    background-color: #fa7e00;
+  }
+  
+  main .committiees .flickity-button:active {
+    background-color: #e07100;
+  }
+  
+  main .committiees #left-arrow {
+    left: 1rem;
+  }
+  
+  main .committiees #right-arrow {
+    right: 1rem;
+  }
+  
+  main .committiees .committees-container ol {
+    margin: 0.75rem 0 1.25rem 0;
+  }
+  
+  main .committiees .committees-container ol .dot {
+    background-color: #7F7F7F;
+    opacity: 0.5;
+  }
+  
+  main .committiees .committees-container ol .is-selected {
+    background-color: #FF8B14;
+    opacity: 1;
+  }
+  
+  main .committiees .committees-container .committee {
+    background-color: #fff;
+    border-radius: 40px;
+    margin: 2rem 2rem 2rem 0 !important;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transition: -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms linear;
+    transition: -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms linear;
+    transition: transform 150ms ease-in, box-shadow 150ms linear;
+    transition: transform 150ms ease-in, box-shadow 150ms linear, -webkit-transform 150ms ease-in, -webkit-box-shadow 150ms linear;
+  }
+  
+  main .committiees .committees-container .committee div .commmittee-name {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  main .committiees .committees-container .committee:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  main .committiees .committees-container .committee:hover div {
+    overflow: hidden;
+  }
+  
+  main .committiees .committees-container div {
+    position: relative;
+  }
+  
+  @-webkit-keyframes float {
+    0% {
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      -webkit-transform: translatey(-5px);
+              transform: translatey(-5px);
+    }
+    100% {
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      -webkit-transform: translatey(-5px);
+              transform: translatey(-5px);
+    }
+    100% {
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+  }
+  

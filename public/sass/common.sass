@@ -1,0 +1,351 @@
+@import 'variables'
+@import 'mixins'
+@import 'forms'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+    outline: none
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+.light
+    background-color: #fff
+    h1
+        color: $dark-grey
+    h2
+        color: $dark-grey
+    p
+        color: $primary-orange
+    .sticky
+        background: rgba(255, 255, 255, 0.95) none repeat scroll 0% 0% !important
+
+body
+    height: 100vh
+    overflow-x: hidden !important
+
+#hero-bg
+    position: absolute
+    width: 100%
+    z-index: -9999999
+    background-repeat: repeat-y
+
+header
+    padding: 1rem 0
+    position: relative
+    .container
+        justify-content: space-between
+        .logo
+            img
+                height: 60px
+                width: auto
+            h3
+                font-family: 'Pacifico', cursive
+                color: $primary-orange
+                margin-left: 1rem
+        .main-nav
+            li
+                margin-right: 1rem
+                .nav-link
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    .left-icon
+                        margin-right: 5px
+                        font-size: calc( 100% + 7px )
+        .btn-hamburger
+            display: none
+            font-size: 25px
+            color: $primary-orange
+            padding: 5px
+            border: 2px solid $primary-orange
+            #close
+                display: none
+
+        //change ham image to close
+        .showClose
+            #ham
+                display: none
+            #close
+                display: block
+        .hamburger-nav
+            display: flex
+            flex-direction: column
+
+            position: absolute
+            top: -100vh
+            transition: all 0.2s ease-in
+
+            width: 100vw
+            height: 100vh
+            z-index: 9998
+
+            left: 0
+
+            background-color: #ffffff
+            padding-top: 1rem
+            ul
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                align-content: center
+                li
+                    margin-top: 20px
+
+        .show-ham-nav
+            top: 93px
+        .nav-link
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-size: 18px
+            font-weight: 500
+            padding: 6px 12px
+            border-radius: 4px
+            color: $light-grey
+            border: 2px solid transparent
+            transition: all 100ms ease-in
+            &:hover
+                background-color: #F5F5F5
+                border: 2px solid #DDDDDD
+            &:active
+                border: 2px solid #CCCCCC
+                background-color: darken(#F5F5F5, 5%)
+            #down-arrow,
+            #ham-down-arrow
+                margin-left: 5px
+                color: $primary-orange
+            .left-icon
+                margin-right: 5px
+                font-size: calc( 100% + 7px )
+        .active
+            background-color: $primary-orange
+            color: #F5F5F5
+            pointer-events: none
+            cursor: default
+    .dropdown
+        position: absolute
+        z-index: 9998
+        top: 0%
+        opacity: 0
+        right: 2.4%
+        transform: translate(0, -100%)
+
+        width: 374px
+        display: flex
+        justify-content: space-between
+        align-content: center
+        background-color: #F5F5F5
+        border: 3px solid $primary-orange
+        border-radius: 4px
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+        transition: top 250ms ease-in, opacity 300ms linear
+        .lhs, .rhs
+            padding: 10px
+            a
+                padding: 0.3rem 0.75rem
+                border-radius: 4px
+                width: 166px
+                color: $light-grey
+                font-weight: 500
+                display: flex
+                align-items: center
+                transition: box-shadow 120ms ease-out
+                img
+                    margin-right: 1rem
+                    width: 23px
+                &:hover
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2)
+    .dropdown-active
+        top: 320px
+        opacity: 1
+    .commmittees-ham-nav
+        display: block
+        position: absolute
+        width: 100vw
+        height: 100vh
+        top: 93px
+        left: -100vw
+        z-index: 9998
+
+        transition: all 0.2s ease-in
+
+        background-color: #ffffff
+        .top
+            background-color: $primary-orange
+            color: #ffffff
+            button
+                display: flex
+                align-items: center
+                width: 100%
+                color: #ffffff
+                font-size: 23px
+                padding: 0.75rem
+                h3
+                    font-weight: 500
+                    margin-left: 1rem
+        .bottom
+            display: flex
+            flex-direction: column
+            padding: 1rem 1rem 0 1rem
+            a
+                color: $dark-grey
+                padding: 0.25rem
+                margin-bottom: 5px
+                display: flex
+                border-bottom: 2px solid $light-grey
+                align-items: center
+                img
+                    width: 23px
+                    height: auto
+                    margin-right: 1rem
+
+.sticky
+    position: fixed
+    top: 0
+    width: 100%
+    background-color: transparent
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+    z-index: 99999
+
+.contact
+    margin-bottom: 10rem
+    display: flex
+    text-align: center
+    align-items: center
+    .form-container
+        padding: 2rem
+        form
+            display: flex
+            flex-direction: column
+            margin-top: 2rem
+            .name
+                display: flex
+                justify-content: space-between
+
+.floating
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    border-radius: 30px
+
+footer
+    width: 100%
+    height: 280px
+    background-image: url('../assets/footer-bg.png')
+    background-size: cover
+    display: flex
+    position: relative
+    .container
+        position: absolute
+        width: 100%
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        justify-content: space-between
+        align-items: end
+        margin-bottom: 1rem
+        .credits
+            display: grid
+            grid-template-columns: auto 1fr
+            align-items: center
+            grid-column-gap: 1rem
+            .logo
+                img
+                    width: 100px
+            .writables
+                h2
+                    color: #ffffff
+                #initials
+                    display: none
+                h4
+                    color: $primary-orange
+                h5
+                    margin-top: 1rem
+                    color: #fff
+        .social-media
+            position: absolute
+            bottom: 0
+            right: 0
+            display: flex
+            justify-content: right
+            //align-self: end
+            align-content: center
+            h4
+                color: #fff
+                margin: 0.5rem 2rem 0 0
+            a
+                padding: 5px
+                border-radius: 20px
+                font-size: 32px
+                margin-right: 0.5rem
+                background-color: #fff
+                color: $primary-orange
+                transition: all 150ms ease-in
+                &:hover
+                    background-color: $primary-orange
+                    color: #fff
+                &:active
+                    background-color: darken($primary-orange, 10%)
+
+.container
+    max-width: 95%
+    margin: 0 auto
+
+.flex
+    display: flex !important
+    align-items: center
+
+ul
+    list-style: none
+a
+    text-decoration: none
+    color: #fff
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+    margin: 0
+    padding: 0
+    vertical-align: baseline
+    font-weight: 400
+    word-spacing: 0px
+
+h1
+    font-weight: 700
+h2
+    font-weight: 700
+h3
+    font-weight: 500
+h4
+    font-weight: 500
+
+.btn
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0.7rem 1rem
+    border-radius: 5px
+    background-color: $primary-orange
+    box-shadow: 5px 10px #888888
+
+.animated-btn
+    transition: transform 100ms ease-in, box-shadow 100ms ease-in !important
+    &:hover
+        background-color: darken($primary-orange, 5%)
+    &:active
+        transform: translate(5px, 10px) !important
+        box-shadow: 0px 0px #888888 !important
+
+button
+    border: none
+    background-color: rgba(0,0,0,0)
+    cursor: pointer
+
+.spacer
+    margin-top: 3rem

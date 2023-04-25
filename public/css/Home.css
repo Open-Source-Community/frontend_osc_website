@@ -1,0 +1,297 @@
+body{
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Navbar */
+#logo_at_Navbar{
+    width: 110px;
+    padding-right: 0;
+    margin-right: 0;
+    transition: all 400ms ease-in-out;
+
+}
+
+#OSC_img{
+    width: 250px;
+    padding-left: 0;
+    margin-left: 0;
+}
+.top_navbar{
+    padding-top: 0;
+    position: fixed;
+    width:100%;
+    top: 0;
+    background-color: transparent;
+    transition: all 400ms ease-in-out;
+    z-index: 10;
+}
+nav, nav > div, .navbar_left_part{
+    padding-top: 0; 
+    margin: 0;
+    
+}
+.navbar_right_part{
+    margin-right: 200px;
+}
+.navbar_right_part >li> a{
+    color: black;
+    font-size: 20px;
+    margin: 5px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.arrow {
+    margin-left: 5px;
+    border: solid orange;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  } 
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+.dropdown_menu_part{
+    border-left:3px solid orange;
+    padding-left: 0;
+    margin: 0;
+} 
+
+.navbar-nav>li>.dropdown-menu {
+    width:360px;
+    padding: 0;
+ }
+.dropdown-item >img{
+    width: 18px;
+
+}
+.dropdown_menu_part>div{
+    margin: 5px 2px;
+}
+.dropdown_menu_part>div> a:hover{
+    margin-left: 4px;
+    transition: margin 150ms ease-in-out;
+}
+
+/**************************/
+
+/*Background*/
+.Home_background>img{
+    position: absolute;
+    z-index: -99;
+   
+}
+#img1{
+    top:0;
+    left:0;
+    width: 600px;
+    height: 510px;
+}
+#img3{
+    position: absolute;
+    z-index: -99;
+    left :-200;
+    top: 750;
+}
+#img4{
+    position: absolute;
+    z-index: -99;
+    left :1150;
+    top: 680;
+}
+#img5{
+    position: absolute;
+    z-index: -99;
+    left :1200;
+    top: 510;
+}
+#img6{
+    position: absolute;
+    z-index: -99;
+    left :1100;
+    top: 590;
+}
+#img7{
+    position: absolute;
+    z-index: -99;
+    left :1300;
+    top: 800;
+}
+/*#img2{
+   top: 150px;
+   right:200px;
+   width:400px;
+}*/
+
+/* Middle */
+.Home_top_part{
+    width: 100%;
+    min-height: 400px;
+    margin-top:100px;
+}
+.home_image {
+    width: 50%;
+
+}
+.home_image>img{
+   width: 100%;
+}
+.home_title{
+    width: 50%;
+    padding-left: 50px;
+    float: left;
+}
+.home_image{
+    float: right;
+}
+.home_title >h1{
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 45px;
+}
+.home_title >p{
+    color: #FF8B14;
+    font-weight: 200px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.extra_description{
+    margin-top:30px;
+    margin-left:40px;
+    width: 600px;
+}
+.extra_description h3{
+    color: rgb(88, 88, 88);
+}
+
+/* Cards*/
+.cards_container{
+    width:100%;
+    position: relative;
+
+}
+.cards{
+    margin:50px;
+    width:4000px;
+    left:0;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    
+}
+.card{
+    -webkit-box-shadow: 10px 11px 26px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 26px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 11px 26px -5px rgba(0,0,0,0.75);
+    border-radius: 50% 50% 10% 10%;
+    display: inline-block;
+    margin:15px;
+}
+.crd_body{
+    text-align: center;
+}
+.crd_text_size{
+    font-size: 14px;
+}
+.card-title{
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(95, 95, 95);
+}
+.btn_style{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 13px;
+    background-color: #FF8B14;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #FF8B14;
+    border-radius: 40px;
+    width:150px;
+    height:50px;
+    transition: all 0.3s ease 0s;
+    -webkit-box-shadow: -1px -1px 81px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 81px -15px rgba(0,0,0,0.75);
+    box-shadow: -1px -1px 81px -15px rgba(0,0,0,0.75);
+    font-size: 18px;
+    margin-top: 20px;
+   
+}
+.arrows_swap>button{
+    border:none;
+   
+}
+
+/* Arrows */
+#left-arrow{
+    position: absolute;
+    left: 30;
+    top:200px;
+  }
+  #right-arrow{
+      position: absolute;
+      right: 20;
+      top:200px;
+  }
+
+/* Registeration link*/
+.regiteration_btn{
+    width:200px;
+}
+.about-us img{
+    position : absolute;
+    right : 0px;
+}
+
+/* about us */
+/* image in folder called img */
+/* ex: url('img/img-name.extntion') */
+/* required images called About.png && Value.png */
+.info{
+    width: 100%;
+    background-image: url('../img/Path\ 320.png');
+    
+    background-size: 50% 100%;
+    background-repeat: repeat;
+    margin-top: 10px;
+  }
+.img1about{
+    margin: auto;
+    text-align: center;
+}
+.story {
+   
+border: 2px solid rgb(240,240,240);
+border-radius: 25px;
+background-color: rgb(240,240,240);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* position: absolute; */
+/* top : 60%;
+left: 24%; */
+margin : auto;
+margin-bottom: 100px;
+width : 52%;
+/* height: 300px; */
+text-align: center;
+}
+.story>h1 {
+color : darkorange;
+font-family: 'Sofia';
+font-size: 325%;
+margin-top: 25px;
+/* padding-left: 35%; */
+}
+.story>p{
+font-size: 140%;
+text-align: center;
+}
+
+
+

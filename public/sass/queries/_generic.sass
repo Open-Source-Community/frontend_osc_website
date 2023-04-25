@@ -1,0 +1,191 @@
+@import '../variables'
+@import '../mixins'
+
+@media only screen and (min-width: 1920px)
+    body
+        //generic styles
+        h1
+            font-size: 40px
+            line-height: 54px
+        h2
+            font-size: 36px
+            line-height: normal
+        h3
+            font-size: 28px
+            line-height: 33.6px
+        h4
+            font-size: 20px
+            line-height: 28.8px
+        p
+            font-size: 23px
+            line-height: normal
+        .contact
+            img
+                width: 790px
+        .btn
+            max-width: 200px
+
+@media only screen and (max-width: 1920px)
+    body
+        //generic styles
+        h1
+            font-size: 45px
+            line-height: 54px
+        h2
+            font-size: 36px
+            line-height: normal
+        h3
+            font-size: 28px
+            line-height: 33.6px
+        h4
+            font-size: 20px
+            line-height: 28.8px
+        p
+            font-size: 23px
+            line-height: normal
+        .contact
+            img
+                width: 790px
+        .btn
+            max-width: 200px
+
+@media only screen and (max-width: 1366px)
+    body
+        h1
+            font-size: 39px
+        h2
+            font-size: 30px
+        h3
+            font-size: 22px
+        h4
+            font-size: 14px
+        p
+            font-size: 19px
+        main
+            .contact
+                img
+                    width: 600px
+
+@media only screen and (max-width: 980px)
+    footer
+        height: 400px
+        background-size: 150% 100%
+        background-position-x: 25%
+        .container
+            flex-direction: column
+            align-items: center
+            justify-content: end
+            .social-media
+                margin-top: 2rem
+                position: relative
+
+@media only screen and (max-width: 960px)
+    body
+        main
+            .container
+                width: 90%
+                margin: 0 auto
+            .hero
+                flex-direction: column-reverse
+                div
+                    text-align: center
+                    justify-content: stretch
+                    grid-row-gap: 10px
+                    h1
+                        margin-top: 10px
+                .btn
+                    max-width: 999px
+                    width: 300px !important
+                    margin: 0 auto
+            .contact
+                flex-direction: column-reverse
+                align-items: stretch
+                z-index: 99
+                img
+                    z-index: -99
+                    width: 100%
+                .form-container
+                    background-color: #fff
+                    form
+                        align-content: stretch
+                    .name
+                        flex-direction: column
+                        input[marker=name]
+                            width: 100%
+                    .btn
+                        margin-top: 2rem
+                        max-width: 999px
+        h1
+            line-height: calc( 100% + 5px )
+        p
+            line-height: calc( 100% + 10px )
+    .spacer
+        margin-top: 5rem
+
+@media only screen and (max-width: 815px)
+    //navigation
+    header #main-nav
+        display: none
+    header #btn-hamburger
+        display: block !important
+
+@media only screen and (max-width: 546px)
+    header
+        .container
+            margin: 0 1rem
+    main
+        h1
+            font-size: 33px
+        h2
+            font-size: 26px
+        h3
+            font-size: 16px
+        h4
+            font-size: 8px
+        p
+            font-size: 16px
+        .contact
+            .form-container
+                border-radius: 10px
+                padding: 1rem 1rem 1.5rem 1rem
+    footer
+        background-image: url('../assets/footer-bg-mobile.png')
+        .credits
+            h2
+                font-size: 26px
+            h4,
+            h5
+                font-size: 14px
+                margin: 0 !important
+            .logo
+                img
+                    width: 120px !important
+
+@media only screen and (max-width: 460px)
+    header
+        .logo
+            h3
+                margin-left: -10px
+    footer
+        background-position-x: 0% !important
+        .credits
+            h2
+                font-size: 38px
+            #long-name
+                display: none
+            #initials
+                display: block !important
+        .social-media
+            h4
+                display: none
+
+@media only screen and (max-width: 374px)
+    header
+        .logo
+            h3
+                display: none
+    main
+        h1
+            font-size: 25px
+        h2
+            font-size: 20px

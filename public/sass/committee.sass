@@ -1,0 +1,21 @@
+@import 'variables'
+@import 'mixins'
+
+main
+    .container:nth-child(1)
+        width: 90%
+        margin: 0 auto
+        .hero
+            margin: 4rem 0
+            .writables
+                margin-right: 1rem
+                .committee-desciption
+                    margin: 1rem 0
+                a:not(.btn)
+                    color: $primary-orange
+                    text-decoration: underline
+                .btn
+                    max-width: 300px !important
+                    margin-top: 1rem
+            .committee-illustration
+                height: 455px

@@ -1,0 +1,96 @@
+
+.fotter
+{
+    color:#FFF;
+    background-image: url("../footerImages/FotterBg.png");
+    /* background-color: aqua; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 350px;
+    width: 100%;
+    padding-top: 130px;
+    /* padding-left: 40px; */
+}
+
+.left-side{
+    width: 50%;
+    float: left;
+}
+.right-side{
+    width: 50%;
+}
+
+.fotTitle{
+    padding-top: 70px;
+}
+.fotDescription{
+    font-size: 16px;
+    color:#f9a826;
+}
+.cpy{
+    font-size: 12px;
+    color:white;
+}
+.left-side{
+    /* background-color: teal; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    overflow: auto;
+}
+.left-side>img{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.right-side{
+    /* background-color: violet; */
+    margin-top: 55px;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    overflow: auto;
+    
+}
+
+.right-side h4{
+    margin-left: 200px;
+}
+.right-side ul{
+    list-style: none;
+    padding: 20px;
+    /* margin-top: 6px; */
+    /* margin-left: 6px; */
+}
+.right-side>ul>li{
+    display: inline-block;
+    font-size: 38px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 27px;
+    text-align: center;
+    line-height: 45px;
+color: #f9a826;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.right-side>ul>li>a{
+    
+    color: #f9a826;
+
+}
+.right-side>ul>li:hover{
+background-color: #f9a826;
+color: white;
+transform: rotate(360deg);
+transition-duration: 0.5s;
+    
+}
+.right-side>ul>li>a:hover{
+color: white;
+}
+.right-side ul li i{
+    margin-top: 7px;
+}

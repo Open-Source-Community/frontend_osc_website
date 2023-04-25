@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1920px) {
+  .hero #info-img {
+    width: 450px; }
+  .hero .word {
+    padding: 3rem; } }
+@media only screen and (max-width: 1366px) {
+  .hero #info-img {
+    width: 350px; } }
+@media only screen and (max-width: 1200px) {
+  .hero {
+    flex-direction: column-reverse;
+    margin-top: 1rem; }
+    .hero .word {
+      margin-right: 0; } }
+@media only screen and (max-width: 750px) {
+  .hero #info-img {
+    width: 250px; }
+  .hero .word {
+    padding: 1.5rem; } }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,30 @@
+main .container:nth-child(1) {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main .container:nth-child(1) .hero {
+  margin: 4rem 0;
+}
+
+main .container:nth-child(1) .hero .writables {
+  margin-right: 1rem;
+}
+
+main .container:nth-child(1) .hero .writables .committee-desciption {
+  margin: 1rem 0;
+}
+
+main .container:nth-child(1) .hero .writables a:not(.btn) {
+  color: #FF8B14;
+  text-decoration: underline;
+}
+
+main .container:nth-child(1) .hero .writables .btn {
+  max-width: 300px !important;
+  margin-top: 1rem;
+}
+
+main .container:nth-child(1) .hero .committee-illustration {
+  height: 455px;
+}

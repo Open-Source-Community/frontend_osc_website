@@ -1,0 +1,154 @@
+html, body{
+    max-width: 100%;
+    overflow-X: hidden;
+}
+/*Navbar*/
+#logo_at_navbar{
+    content:url(../img/logo22.png);
+    width:90px;
+    margin:10px;
+
+}
+.top_navbar{
+    border-radius:0% 0% 50% 0% ;
+    background-color: inherit;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+
+}
+
+.navbar-toggler{
+  border: none;
+  position: absolute;
+  top: 50px;
+  right:0px;
+  z-index: 3;
+
+}
+.navbar-toggler-icon_{
+    position: fixed;
+    right:30;
+}
+.navbar-toggler-icon_ >img{
+   display: block;
+   margin: 5px 10px;
+   width: 40px;
+   
+   
+}
+.mobile_nav_shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #525252;
+    height:210px;
+    width: 100%;
+    z-index: -3;
+}
+
+.toggle-navbar-image{
+    width: 220px;
+    height: 220px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 80% 80% 80% 80%;
+    position: fixed;
+    right: -80;
+    top: -85;
+    z-index: 1;
+}
+/*Background*/
+#img1{
+    content: url('../img/Ellipse 106.png') ;
+    width: 200px;
+    height: 165px;
+    left: -75;
+    top: -40;
+}
+#img2{
+    content: url('../img/Path 320.png') ;
+    width: 200px;
+    height: 165px;
+    position: absolute;
+    right: -40;
+    top: -30;
+}
+/* Middle */
+.Home_top_part{
+   background-color: #525252;
+   width: 100%;
+   margin-top: 70px;
+   padding-top: 50px;
+   height:900px;
+   -webkit-box-shadow: -1px 25px 70px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 25px 70px -16px rgba(0,0,0,0.75);
+box-shadow: -1px 25px 70px -16px rgba(0,0,0,0.75);
+    border-radius: 0% 0% 15% 15%; 
+    flex: wrap;
+    position: relative;
+
+}
+
+
+.home_title{
+    width:100%;
+    height:400px;
+    max-height: 500px;
+    display: block;
+    margin-bottom: 40px;
+
+}
+.home_title>h1{
+    color: orange;
+    width: 100%;
+}
+.home_title> p{
+    color: white;
+    width:100%;
+}
+.home_title, .home_image{
+    float: left;
+    margin: 0;
+}
+.home_image{
+    width:100%;
+    max-height: 400px;
+    display: block;
+    border-radius: 0% 0% 15% 15%; 
+    position: absolute;
+    bottom: 100;
+   
+}
+.home_image>img{
+    content:url('../img/Img@2x.png');
+    width: 80%;
+    margin-left: 150px;
+}
+.extra_description{
+    margin-top: 50px;
+    width: 100%;
+
+}
+.extra_description>h3{
+    font-size: 45px;
+    content :"Our Committees";
+    width: 60%;
+    color: rgb(59, 58, 58);
+
+}
+.extra_description >p{
+    width:70%;
+    color: rgb(233, 159, 22);
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Arrows */
+#left-Arrow{
+    content: url('../img/Group\ 48.png');
+} 
+#right-Arrow{
+    content: url('../img/Group\ 49.png');
+} 
+

@@ -1,0 +1,286 @@
+@media only screen and (min-width: 1920px) {
+  body h1 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  body h2 {
+    font-size: 36px;
+    line-height: normal;
+  }
+  body h3 {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  body h4 {
+    font-size: 20px;
+    line-height: 28.8px;
+  }
+  body p {
+    font-size: 23px;
+    line-height: normal;
+  }
+  body .contact img {
+    width: 790px;
+  }
+  body .btn {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  body h1 {
+    font-size: 45px;
+    line-height: 54px;
+  }
+  body h2 {
+    font-size: 36px;
+    line-height: normal;
+  }
+  body h3 {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  body h4 {
+    font-size: 20px;
+    line-height: 28.8px;
+  }
+  body p {
+    font-size: 23px;
+    line-height: normal;
+  }
+  body .contact img {
+    width: 790px;
+  }
+  body .btn {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  body h1 {
+    font-size: 39px;
+  }
+  body h2 {
+    font-size: 30px;
+  }
+  body h3 {
+    font-size: 22px;
+  }
+  body h4 {
+    font-size: 14px;
+  }
+  body p {
+    font-size: 19px;
+  }
+  body main .contact img {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  footer {
+    height: 400px;
+    background-size: 150% 100%;
+    background-position-x: 25%;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  footer .container .social-media {
+    margin-top: 2rem;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  body main .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body main .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .hero div {
+    text-align: center;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    grid-row-gap: 10px;
+  }
+  body main .hero div h1 {
+    margin-top: 10px;
+  }
+  body main .hero .btn {
+    max-width: 999px;
+    width: 300px !important;
+    margin: 0 auto;
+  }
+  body main .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    z-index: 99;
+  }
+  body main .contact img {
+    z-index: -99;
+    width: 100%;
+  }
+  body main .contact .form-container {
+    background-color: #fff;
+  }
+  body main .contact .form-container form {
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  body main .contact .form-container .name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .contact .form-container .name input[marker=name] {
+    width: 100%;
+  }
+  body main .contact .form-container .btn {
+    margin-top: 2rem;
+    max-width: 999px;
+  }
+  body h1 {
+    line-height: calc( 100% + 5px);
+  }
+  body p {
+    line-height: calc( 100% + 10px);
+  }
+  .spacer {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  header #main-nav {
+    display: none;
+  }
+  header #btn-hamburger {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  header .container {
+    margin: 0 1rem;
+  }
+  main h1 {
+    font-size: 33px;
+  }
+  main h2 {
+    font-size: 26px;
+  }
+  main h3 {
+    font-size: 16px;
+  }
+  main h4 {
+    font-size: 8px;
+  }
+  main p {
+    font-size: 16px;
+  }
+  main .contact .form-container {
+    border-radius: 10px;
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+  footer {
+    background-image: url("../assets/footer-bg-mobile.png");
+  }
+  footer .credits h2 {
+    font-size: 26px;
+  }
+  footer .credits h4,
+  footer .credits h5 {
+    font-size: 14px;
+    margin: 0 !important;
+  }
+  footer .credits .logo img {
+    width: 120px !important;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  header .logo h3 {
+    margin-left: -10px;
+  }
+  footer {
+    background-position-x: 0% !important;
+  }
+  footer .credits h2 {
+    font-size: 38px;
+  }
+  footer .credits #long-name {
+    display: none;
+  }
+  footer .credits #initials {
+    display: block !important;
+  }
+  footer .social-media h4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  header .logo h3 {
+    display: none;
+  }
+  main h1 {
+    font-size: 25px;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  body input[type=text],
+  body input[type=email],
+  body input[type=tel],
+  body input[type=submit],
+  body select,
+  body textarea {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  body input[type=text],
+  body input[type=email],
+  body input[type=tel],
+  body input[type=submit],
+  body select,
+  body textarea {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  main input[type=text],
+  main input[type=email],
+  main input[type=tel],
+  main select,
+  main textarea {
+    font-size: 12px;
+  }
+}

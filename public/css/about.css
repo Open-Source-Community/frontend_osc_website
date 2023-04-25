@@ -1,0 +1,32 @@
+main .container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .word {
+  border-radius: 20px;
+  margin: 2rem 2rem 2rem 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main h1 {
+  margin-bottom: 1rem;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+main a {
+  color: #FF8B14;
+  text-decoration: underline;
+}
